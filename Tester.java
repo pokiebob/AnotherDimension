@@ -25,5 +25,9 @@ public class Tester {
         System.out.println(ArrayOps.arrToString(ArrayOps.sumCols(new int[][] { {1, 2, 3}, {234, -3, 46}, {78, 0, -49} })));
         System.out.println(ArrayOps.arrToString(ArrayOps.sumCols(new int[][] { {4, 4} })));
         System.out.println(ArrayOps.arrToString(ArrayOps.sumCols(new int[][] { {-2, -5}, {28, 823}, {234, -23} })));
+
+        System.out.println(ArrayOps.isRowMagic(new int[][] { {1, 2, 3}, {234, -3, 46}, {} }));
+        System.out.println(ArrayOps.isRowMagic(new int[][] { {-2, -5}, {-7, 0} }));
+        System.out.println(ArrayOps.isRowMagic(new int[][] { {} }));
     }
 }
