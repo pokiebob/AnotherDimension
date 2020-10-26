@@ -29,5 +29,10 @@ public class Tester {
         System.out.println(ArrayOps.isRowMagic(new int[][] { {1, 2, 3}, {234, -3, 46}, {} }));
         System.out.println(ArrayOps.isRowMagic(new int[][] { {-2, -5}, {-7, 0} }));
         System.out.println(ArrayOps.isRowMagic(new int[][] { {} }));
+
+        System.out.println(ArrayOps.isColMagic(new int[][] { {1, 2, 3}, {234, -3, 46}, {78, 0, 49} }));
+        System.out.println(ArrayOps.isColMagic(new int[][] { {-2, 4}, {12, 6} }));
+        System.out.println(ArrayOps.isColMagic(new int[][] { {3} }));
+
     }
 }
