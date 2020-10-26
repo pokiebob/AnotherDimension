@@ -18,7 +18,7 @@ public class ArrayOps {
   }
 
   public static int largest(int[] arr) {
-    int largest = 0;
+    int largest = arr[0];
     for (int i : arr) {
       if (i > largest) {
         largest = i;
@@ -31,6 +31,14 @@ public class ArrayOps {
     int[] arr = new int[matrix.length];
     for (int i = 0; i < matrix.length; i++) {
       arr[i] = sum(matrix[i]);
+    }
+    return arr;
+  }
+
+  public static int[] largestInRows(int[][] matrix) {
+    int[] arr = new int[matrix.length];
+    for (int i = 0; i < matrix.length; i++) {
+      arr[i] = largest(matrix[i]);
     }
     return arr;
   }

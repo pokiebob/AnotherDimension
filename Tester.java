@@ -13,5 +13,9 @@ public class Tester {
         System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {1, 2, 3}, {234, -3, 46}, {} })));
         System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {4, 4} })));
         System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {} })));
+
+        System.out.println(ArrayOps.arrToString(ArrayOps.largestInRows(new int[][] { {1, 2, 3}, {234, -3, 46}, {78} })));
+        System.out.println(ArrayOps.arrToString(ArrayOps.largestInRows(new int[][] { {4, 4} })));
+        System.out.println(ArrayOps.arrToString(ArrayOps.largestInRows(new int[][] { {-2, -5}, {2}, {234, 235, 823, -23} })));
     }
 }
