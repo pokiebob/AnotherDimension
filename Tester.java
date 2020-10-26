@@ -1,3 +1,5 @@
+
+
 public class Tester {
     public static void main(String[] args) {
         System.out.println(ArrayOps.sum(new int[] { 1, 2, 3 }));
@@ -7,5 +9,9 @@ public class Tester {
         System.out.println(ArrayOps.largest(new int[] {1, 2, 3}));
         System.out.println(ArrayOps.largest(new int[] { 234, -3, 46}));
         System.out.println(ArrayOps.largest(new int[] {4, 4}));
+
+        System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {1, 2, 3}, {234, -3, 46}, {} })));
+        System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {4, 4} })));
+        System.out.println(ArrayOps.arrToString(ArrayOps.sumRows(new int[][] { {} })));
     }
 }
