@@ -34,5 +34,11 @@ public class Tester {
         System.out.println(ArrayOps.isColMagic(new int[][] { {-2, 4}, {12, 6} }));
         System.out.println(ArrayOps.isColMagic(new int[][] { {3} }));
 
+        int[][]E = { {  2,  4, 2 }, {  2, 2, 2 } };
+        System.out.println(ArrayOps.isLocationMagic(E, 0, 1));
+        System.out.println(ArrayOps.isLocationMagic(E, 1, 1));
+        int[][]F = { {  -3,  24, 5 }, {  2, 3, 4 } };
+        System.out.println(ArrayOps.isLocationMagic(F, 0, 1));
+        System.out.println(ArrayOps.isLocationMagic(F, 1, 2));
     }
 }
