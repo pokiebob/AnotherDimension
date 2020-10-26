@@ -17,6 +17,14 @@ public class ArrayOps {
       return sum;
   }
 
+  public static int sum(int[][] arr) {
+    int sum = 0;
+    for (int[] i : arr) {
+      sum += sum(i);
+    }
+    return sum;
+  }
+
   public static int largest(int[] arr) {
     int largest = arr[0];
     for (int i : arr) {
